@@ -1,155 +1,1809 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-theme.css.map" rel="stylesheet">
-		<link href="css/font-awesome.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/bootstrap_social.css" rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css.map" rel="stylesheet">
+        <script>// Code goes here
+            var i = 20;
 
-	</head>
-	<body>
-		<nav class="navbar">
-			<div class="container" style="padding-right: 93px;">
-				<img class="navbar-text navbar-left" src="/images/mediclick.png">
-				<h2 class="navbar-text navbar-right"><img style="
-					width: 62px;height: 61px;" src="/images/phone.png"><span> <a href="#" class="navbar-link" style="text-decoration: none; color:black">1800 657 7000</a></span></h2>
-			</div>
-		</nav>
-		<div class="background-image"><center>
-			<div class="content ">
-				<div style="float:right;padding-top: 90px;"><image src="/images/doctor.png" ></image></div>
-				<div style="color:#fff">
-					<h1 style="font-size: 60px;font-weight: bold;">Medical <span style="color:red;">&</span> Treatment</h1>
-					<span style="font-family: 'josefin sans'; font-size: 36px; line-height: 35px;color:#fff;">Template for Unbounce</span><br><br>
-					<span style="font-size:20px;color:#fff;"><span style="font-family:josefin sans;">A Responsive Medical and Treatment Template for Unbounce and can be used for any services related to health.</span></span>
-					<div style="container">
-						<span><img src="/images/stetho.png"></span><span style="font-size:24px;"><span style="color:#333333;"><strong><span style="font-family:josefin sans;">Professional Doctors</span></strong></span>
-						</span>						
-					</div>
-					<hr>
-					<div style="container">
-						<span><img src="/images/pureblood.png"></span><span style="font-size:24px;"><span style="color:#333333;"><strong><span style="font-family:josefin sans;">Exclusive Blood Bank</span></strong></span>
-						</span>						
-					</div>
-					<hr>
-					<div style="container">
-						<span><img src="/images/track.png"></span><span style="font-size:24px;"><span style="color:#333333;"><strong><span style="font-family:josefin sans;">Track your progress</span></strong></span>
-						</span>						
-					</div>
-					<hr>
-				</div>
-			</div></center>
-		</div><br><br>
-		<div class="" style="width:127%;height: 100vh;"><center style="
-			margin-left: 250px;
-			">
-			<div class="col-xs-12 col-sm-5">
-				<h1>
-					<strong><span style="font-size:30px;"><span style="font-family:josefin sans;"><span style="color:#333333;">BEST TEMPLATE&nbsp;</span><span style="color:#ff4444;">FOR</span><span style="color:#333333;"> MEDICAL</span></span></span></strong>
-				</h1>
-				<p>
-					<span style="font-family: 'josefin sans'; font-size: 22px; line-height: 26px;color:gray;">You'll love the template features</span>
-				</p>
-				<img src="/images/red-dash.png">
-				<p >
-					<span style="font-size:20px;"><span style="font-family:josefin sans;">Lorem ipsum dolor medical conveniently develop just in time sources where as technology. Seamlessly reconceptualize meta services without quality vortals. </span></span>
-				</p>
-				<img src="/images/inside-clinic.jpg">
-			</div>
-			<div class="col-xs-12 col-sm-6">
-				<div class="lp-element lp-pom-box" id="lp-pom-box-39">
-					<div id="lp-pom-box-39-color-overlay" style="padding-top:20px;">
-						<span style="font-family:josefin sans;font-size:25px;font-weight:500">MAKE AN APPOINTMENT</span>
-						<form>
-							<fieldset>
-								<legend class="text-center">Contact us</legend>
+            var counterBack = setInterval(function(){
+            i++;
+                if(i<100)
+                {
+                    $('.progress-bar').css('width', i+'%');
+                    //document.getElementById("bar").innerHTML="hi" 
+                } 
+                else if(i>90)
+                {
+                    clearTimeout(counterBack);
+                    window.location.href = "medi.html";
+                }
+  
+            }, 100);</script>
+    </head>
+    <body>
+		<style>
+		html, body {
+  height: 100%;
+}
 
-								<!-- Name input-->
-								<div class="form-group">
-									<label class="col-md-6 control-label" for="name">Name</label>
-									<div class="col-md-12">
-										<input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-									</div>
-								</div>
-								<br>
-								<!-- Email input-->
-								<div class="form-group">
-									<label class="col-md-6 control-label" for="email">Your E-mail</label>
-									<div class="col-md-12">
-										<input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-									</div>
-								</div>
-								<br><!-- Email input-->
-								<div class="form-group">
-									<label class="col-md-6 control-label" for="number">Number</label>
-									<div class="col-md-12">
-										<input id="number" name="number" type="text" placeholder="Your Number" class="form-control">
-									</div>
-								</div>
+body {
+  font-size: 60px;
+  overflow: hidden;
+  perspective: 10em;
+  backface-visibility: hidden;
+}
 
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateY(-40deg) rotateX(-15deg);
+  -webkit-transition: transform .1s;
+}
 
-								<!-- Form actions -->
-								<div class="form-group" >
-									<div class="col-md-12 text-right" style="margin-top: 20px;">
-										<button type="submit" class="btn btn-primary ">Submit</button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
-					</div>		
-				</div></div></center></div><br><br>
+.rotateview {
+  position: fixed;
+  width: 4.7619%;
+  height: 11.11111%;
+  z-index: 99;
+  box-sizing: border-box;
+}
+.rotateview:nth-child(1) {
+  left: 0%;
+  top: 0%;
+}
+.rotateview:nth-child(1):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(75deg);
+}
+.rotateview:nth-child(2) {
+  left: 4.7619%;
+  top: 0%;
+}
+.rotateview:nth-child(2):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(3) {
+  left: 9.52381%;
+  top: 0%;
+}
+.rotateview:nth-child(3):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(75deg);
+}
+.rotateview:nth-child(4) {
+  left: 14.28571%;
+  top: 0%;
+}
+.rotateview:nth-child(4):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(5) {
+  left: 19.04762%;
+  top: 0%;
+}
+.rotateview:nth-child(5):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(75deg);
+}
+.rotateview:nth-child(6) {
+  left: 23.80952%;
+  top: 0%;
+}
+.rotateview:nth-child(6):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(7) {
+  left: 28.57143%;
+  top: 0%;
+}
+.rotateview:nth-child(7):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(75deg);
+}
+.rotateview:nth-child(8) {
+  left: 33.33333%;
+  top: 0%;
+}
+.rotateview:nth-child(8):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(9) {
+  left: 38.09524%;
+  top: 0%;
+}
+.rotateview:nth-child(9):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(75deg);
+}
+.rotateview:nth-child(10) {
+  left: 42.85714%;
+  top: 0%;
+}
+.rotateview:nth-child(10):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(11) {
+  left: 47.61905%;
+  top: 0%;
+}
+.rotateview:nth-child(11):hover ~ .container {
+  transform: rotateY(0deg) rotateX(75deg);
+}
+.rotateview:nth-child(12) {
+  left: 52.38095%;
+  top: 0%;
+}
+.rotateview:nth-child(12):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(13) {
+  left: 57.14286%;
+  top: 0%;
+}
+.rotateview:nth-child(13):hover ~ .container {
+  transform: rotateY(27deg) rotateX(75deg);
+}
+.rotateview:nth-child(14) {
+  left: 61.90476%;
+  top: 0%;
+}
+.rotateview:nth-child(14):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(15) {
+  left: 66.66667%;
+  top: 0%;
+}
+.rotateview:nth-child(15):hover ~ .container {
+  transform: rotateY(54deg) rotateX(75deg);
+}
+.rotateview:nth-child(16) {
+  left: 71.42857%;
+  top: 0%;
+}
+.rotateview:nth-child(16):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(17) {
+  left: 76.19048%;
+  top: 0%;
+}
+.rotateview:nth-child(17):hover ~ .container {
+  transform: rotateY(81deg) rotateX(75deg);
+}
+.rotateview:nth-child(18) {
+  left: 80.95238%;
+  top: 0%;
+}
+.rotateview:nth-child(18):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(19) {
+  left: 85.71429%;
+  top: 0%;
+}
+.rotateview:nth-child(19):hover ~ .container {
+  transform: rotateY(108deg) rotateX(75deg);
+}
+.rotateview:nth-child(20) {
+  left: 90.47619%;
+  top: 0%;
+}
+.rotateview:nth-child(20):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(75deg);
+}
+.rotateview:nth-child(21) {
+  left: 95.2381%;
+  top: 0%;
+}
+.rotateview:nth-child(21):hover ~ .container {
+  transform: rotateY(135deg) rotateX(75deg);
+}
+.rotateview:nth-child(22) {
+  left: 0%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(22):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(23) {
+  left: 4.7619%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(23):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(24) {
+  left: 9.52381%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(24):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(25) {
+  left: 14.28571%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(25):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(26) {
+  left: 19.04762%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(26):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(27) {
+  left: 23.80952%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(27):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(28) {
+  left: 28.57143%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(28):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(29) {
+  left: 33.33333%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(29):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(30) {
+  left: 38.09524%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(30):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(31) {
+  left: 42.85714%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(31):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(32) {
+  left: 47.61905%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(32):hover ~ .container {
+  transform: rotateY(0deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(33) {
+  left: 52.38095%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(33):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(34) {
+  left: 57.14286%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(34):hover ~ .container {
+  transform: rotateY(27deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(35) {
+  left: 61.90476%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(35):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(36) {
+  left: 66.66667%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(36):hover ~ .container {
+  transform: rotateY(54deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(37) {
+  left: 71.42857%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(37):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(38) {
+  left: 76.19048%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(38):hover ~ .container {
+  transform: rotateY(81deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(39) {
+  left: 80.95238%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(39):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(40) {
+  left: 85.71429%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(40):hover ~ .container {
+  transform: rotateY(108deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(41) {
+  left: 90.47619%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(41):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(42) {
+  left: 95.2381%;
+  top: 11.11111%;
+}
+.rotateview:nth-child(42):hover ~ .container {
+  transform: rotateY(135deg) rotateX(56.25deg);
+}
+.rotateview:nth-child(43) {
+  left: 0%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(43):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(44) {
+  left: 4.7619%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(44):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(45) {
+  left: 9.52381%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(45):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(46) {
+  left: 14.28571%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(46):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(47) {
+  left: 19.04762%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(47):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(48) {
+  left: 23.80952%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(48):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(49) {
+  left: 28.57143%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(49):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(50) {
+  left: 33.33333%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(50):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(51) {
+  left: 38.09524%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(51):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(52) {
+  left: 42.85714%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(52):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(53) {
+  left: 47.61905%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(53):hover ~ .container {
+  transform: rotateY(0deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(54) {
+  left: 52.38095%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(54):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(55) {
+  left: 57.14286%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(55):hover ~ .container {
+  transform: rotateY(27deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(56) {
+  left: 61.90476%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(56):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(57) {
+  left: 66.66667%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(57):hover ~ .container {
+  transform: rotateY(54deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(58) {
+  left: 71.42857%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(58):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(59) {
+  left: 76.19048%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(59):hover ~ .container {
+  transform: rotateY(81deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(60) {
+  left: 80.95238%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(60):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(61) {
+  left: 85.71429%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(61):hover ~ .container {
+  transform: rotateY(108deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(62) {
+  left: 90.47619%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(62):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(63) {
+  left: 95.2381%;
+  top: 22.22222%;
+}
+.rotateview:nth-child(63):hover ~ .container {
+  transform: rotateY(135deg) rotateX(37.5deg);
+}
+.rotateview:nth-child(64) {
+  left: 0%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(64):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(65) {
+  left: 4.7619%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(65):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(66) {
+  left: 9.52381%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(66):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(67) {
+  left: 14.28571%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(67):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(68) {
+  left: 19.04762%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(68):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(69) {
+  left: 23.80952%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(69):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(70) {
+  left: 28.57143%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(70):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(71) {
+  left: 33.33333%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(71):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(72) {
+  left: 38.09524%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(72):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(73) {
+  left: 42.85714%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(73):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(74) {
+  left: 47.61905%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(74):hover ~ .container {
+  transform: rotateY(0deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(75) {
+  left: 52.38095%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(75):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(76) {
+  left: 57.14286%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(76):hover ~ .container {
+  transform: rotateY(27deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(77) {
+  left: 61.90476%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(77):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(78) {
+  left: 66.66667%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(78):hover ~ .container {
+  transform: rotateY(54deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(79) {
+  left: 71.42857%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(79):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(80) {
+  left: 76.19048%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(80):hover ~ .container {
+  transform: rotateY(81deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(81) {
+  left: 80.95238%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(81):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(82) {
+  left: 85.71429%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(82):hover ~ .container {
+  transform: rotateY(108deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(83) {
+  left: 90.47619%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(83):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(84) {
+  left: 95.2381%;
+  top: 33.33333%;
+}
+.rotateview:nth-child(84):hover ~ .container {
+  transform: rotateY(135deg) rotateX(18.75deg);
+}
+.rotateview:nth-child(85) {
+  left: 0%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(85):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(0deg);
+}
+.rotateview:nth-child(86) {
+  left: 4.7619%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(86):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(87) {
+  left: 9.52381%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(87):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(0deg);
+}
+.rotateview:nth-child(88) {
+  left: 14.28571%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(88):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(89) {
+  left: 19.04762%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(89):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(0deg);
+}
+.rotateview:nth-child(90) {
+  left: 23.80952%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(90):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(91) {
+  left: 28.57143%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(91):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(0deg);
+}
+.rotateview:nth-child(92) {
+  left: 33.33333%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(92):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(93) {
+  left: 38.09524%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(93):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(0deg);
+}
+.rotateview:nth-child(94) {
+  left: 42.85714%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(94):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(95) {
+  left: 47.61905%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(95):hover ~ .container {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+.rotateview:nth-child(96) {
+  left: 52.38095%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(96):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(97) {
+  left: 57.14286%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(97):hover ~ .container {
+  transform: rotateY(27deg) rotateX(0deg);
+}
+.rotateview:nth-child(98) {
+  left: 61.90476%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(98):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(99) {
+  left: 66.66667%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(99):hover ~ .container {
+  transform: rotateY(54deg) rotateX(0deg);
+}
+.rotateview:nth-child(100) {
+  left: 71.42857%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(100):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(101) {
+  left: 76.19048%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(101):hover ~ .container {
+  transform: rotateY(81deg) rotateX(0deg);
+}
+.rotateview:nth-child(102) {
+  left: 80.95238%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(102):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(103) {
+  left: 85.71429%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(103):hover ~ .container {
+  transform: rotateY(108deg) rotateX(0deg);
+}
+.rotateview:nth-child(104) {
+  left: 90.47619%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(104):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(0deg);
+}
+.rotateview:nth-child(105) {
+  left: 95.2381%;
+  top: 44.44444%;
+}
+.rotateview:nth-child(105):hover ~ .container {
+  transform: rotateY(135deg) rotateX(0deg);
+}
+.rotateview:nth-child(106) {
+  left: 0%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(106):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(107) {
+  left: 4.7619%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(107):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(108) {
+  left: 9.52381%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(108):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(109) {
+  left: 14.28571%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(109):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(110) {
+  left: 19.04762%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(110):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(111) {
+  left: 23.80952%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(111):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(112) {
+  left: 28.57143%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(112):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(113) {
+  left: 33.33333%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(113):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(114) {
+  left: 38.09524%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(114):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(115) {
+  left: 42.85714%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(115):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(116) {
+  left: 47.61905%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(116):hover ~ .container {
+  transform: rotateY(0deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(117) {
+  left: 52.38095%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(117):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(118) {
+  left: 57.14286%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(118):hover ~ .container {
+  transform: rotateY(27deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(119) {
+  left: 61.90476%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(119):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(120) {
+  left: 66.66667%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(120):hover ~ .container {
+  transform: rotateY(54deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(121) {
+  left: 71.42857%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(121):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(122) {
+  left: 76.19048%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(122):hover ~ .container {
+  transform: rotateY(81deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(123) {
+  left: 80.95238%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(123):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(124) {
+  left: 85.71429%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(124):hover ~ .container {
+  transform: rotateY(108deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(125) {
+  left: 90.47619%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(125):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(126) {
+  left: 95.2381%;
+  top: 55.55556%;
+}
+.rotateview:nth-child(126):hover ~ .container {
+  transform: rotateY(135deg) rotateX(-18.75deg);
+}
+.rotateview:nth-child(127) {
+  left: 0%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(127):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(128) {
+  left: 4.7619%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(128):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(129) {
+  left: 9.52381%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(129):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(130) {
+  left: 14.28571%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(130):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(131) {
+  left: 19.04762%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(131):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(132) {
+  left: 23.80952%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(132):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(133) {
+  left: 28.57143%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(133):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(134) {
+  left: 33.33333%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(134):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(135) {
+  left: 38.09524%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(135):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(136) {
+  left: 42.85714%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(136):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(137) {
+  left: 47.61905%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(137):hover ~ .container {
+  transform: rotateY(0deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(138) {
+  left: 52.38095%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(138):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(139) {
+  left: 57.14286%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(139):hover ~ .container {
+  transform: rotateY(27deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(140) {
+  left: 61.90476%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(140):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(141) {
+  left: 66.66667%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(141):hover ~ .container {
+  transform: rotateY(54deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(142) {
+  left: 71.42857%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(142):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(143) {
+  left: 76.19048%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(143):hover ~ .container {
+  transform: rotateY(81deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(144) {
+  left: 80.95238%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(144):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(145) {
+  left: 85.71429%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(145):hover ~ .container {
+  transform: rotateY(108deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(146) {
+  left: 90.47619%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(146):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(147) {
+  left: 95.2381%;
+  top: 66.66667%;
+}
+.rotateview:nth-child(147):hover ~ .container {
+  transform: rotateY(135deg) rotateX(-37.5deg);
+}
+.rotateview:nth-child(148) {
+  left: 0%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(148):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(149) {
+  left: 4.7619%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(149):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(150) {
+  left: 9.52381%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(150):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(151) {
+  left: 14.28571%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(151):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(152) {
+  left: 19.04762%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(152):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(153) {
+  left: 23.80952%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(153):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(154) {
+  left: 28.57143%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(154):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(155) {
+  left: 33.33333%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(155):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(156) {
+  left: 38.09524%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(156):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(157) {
+  left: 42.85714%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(157):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(158) {
+  left: 47.61905%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(158):hover ~ .container {
+  transform: rotateY(0deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(159) {
+  left: 52.38095%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(159):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(160) {
+  left: 57.14286%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(160):hover ~ .container {
+  transform: rotateY(27deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(161) {
+  left: 61.90476%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(161):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(162) {
+  left: 66.66667%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(162):hover ~ .container {
+  transform: rotateY(54deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(163) {
+  left: 71.42857%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(163):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(164) {
+  left: 76.19048%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(164):hover ~ .container {
+  transform: rotateY(81deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(165) {
+  left: 80.95238%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(165):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(166) {
+  left: 85.71429%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(166):hover ~ .container {
+  transform: rotateY(108deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(167) {
+  left: 90.47619%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(167):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(168) {
+  left: 95.2381%;
+  top: 77.77778%;
+}
+.rotateview:nth-child(168):hover ~ .container {
+  transform: rotateY(135deg) rotateX(-56.25deg);
+}
+.rotateview:nth-child(169) {
+  left: 0%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(169):hover ~ .container {
+  transform: rotateY(-135deg) rotateX(-75deg);
+}
+.rotateview:nth-child(170) {
+  left: 4.7619%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(170):hover ~ .container {
+  transform: rotateY(-121.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(171) {
+  left: 9.52381%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(171):hover ~ .container {
+  transform: rotateY(-108deg) rotateX(-75deg);
+}
+.rotateview:nth-child(172) {
+  left: 14.28571%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(172):hover ~ .container {
+  transform: rotateY(-94.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(173) {
+  left: 19.04762%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(173):hover ~ .container {
+  transform: rotateY(-81deg) rotateX(-75deg);
+}
+.rotateview:nth-child(174) {
+  left: 23.80952%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(174):hover ~ .container {
+  transform: rotateY(-67.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(175) {
+  left: 28.57143%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(175):hover ~ .container {
+  transform: rotateY(-54deg) rotateX(-75deg);
+}
+.rotateview:nth-child(176) {
+  left: 33.33333%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(176):hover ~ .container {
+  transform: rotateY(-40.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(177) {
+  left: 38.09524%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(177):hover ~ .container {
+  transform: rotateY(-27deg) rotateX(-75deg);
+}
+.rotateview:nth-child(178) {
+  left: 42.85714%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(178):hover ~ .container {
+  transform: rotateY(-13.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(179) {
+  left: 47.61905%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(179):hover ~ .container {
+  transform: rotateY(0deg) rotateX(-75deg);
+}
+.rotateview:nth-child(180) {
+  left: 52.38095%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(180):hover ~ .container {
+  transform: rotateY(13.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(181) {
+  left: 57.14286%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(181):hover ~ .container {
+  transform: rotateY(27deg) rotateX(-75deg);
+}
+.rotateview:nth-child(182) {
+  left: 61.90476%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(182):hover ~ .container {
+  transform: rotateY(40.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(183) {
+  left: 66.66667%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(183):hover ~ .container {
+  transform: rotateY(54deg) rotateX(-75deg);
+}
+.rotateview:nth-child(184) {
+  left: 71.42857%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(184):hover ~ .container {
+  transform: rotateY(67.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(185) {
+  left: 76.19048%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(185):hover ~ .container {
+  transform: rotateY(81deg) rotateX(-75deg);
+}
+.rotateview:nth-child(186) {
+  left: 80.95238%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(186):hover ~ .container {
+  transform: rotateY(94.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(187) {
+  left: 85.71429%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(187):hover ~ .container {
+  transform: rotateY(108deg) rotateX(-75deg);
+}
+.rotateview:nth-child(188) {
+  left: 90.47619%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(188):hover ~ .container {
+  transform: rotateY(121.5deg) rotateX(-75deg);
+}
+.rotateview:nth-child(189) {
+  left: 95.2381%;
+  top: 88.88889%;
+}
+.rotateview:nth-child(189):hover ~ .container {
+  transform: rotateY(135deg) rotateX(-75deg);
+}
 
-		<div class="container-box">
-			<div class="box first">
-				<span class="icon-cont"><img style="align:center;margin-left: -118;margin-bottom: 00px;margin-top: -35;" src="/images/tab1.jpg"></span>
-				<span style="color: #fff;
-							 font-family: 'Open Sans', Arial, sans-serif;
-							 font-weight: 300;
-							 font-size: 24px;">
-					<h3 style="
-							   margin-top: 210px;
-							   ">Surgery</h3></span>
-				<h4>
-					We provide all types of surgery and replantation. Cosmetic Surgery, Facial and beauty etc..</h4>
-			</div>
+.box {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1em;
+  height: 1em;
+  margin-left: -.5em;
+  margin-top: -.5em;
+  transform-style: preserve-3d;
+}
+.box .face {
+  box-sizing: border-box;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+.box .face:nth-child(1) {
+  transform: translateZ(-0.5em);
+}
+.box .face:nth-child(2) {
+  transform: rotateX(90deg) translateZ(-0.5em);
+  animation: facebottom 8s infinite;
+}
+.box .face:nth-child(3) {
+  transform: rotateX(180deg) translateZ(-0.5em);
+  animation: facefront 8s infinite;
+}
+.box .face:nth-child(4) {
+  transform: rotateX(-90deg) translateZ(-0.5em);
+  animation: facetop 8s infinite;
+}
+.box .face:nth-child(5) {
+  transform: rotateY(90deg) translateZ(-0.5em);
+  animation: faceleft 8s infinite;
+}
+.box .face:nth-child(6) {
+  transform: rotateY(-90deg) translateZ(-0.5em);
+  animation: faceright 8s infinite;
+}
+.box:nth-child(1) {
+  transform: translateZ(-1em);
+}
+.box:nth-child(1) .face {
+  animation: none;
+}
+.box:nth-child(2) {
+  animation: boxtop 8s infinite;
+}
+.box:nth-child(3) {
+  animation: boxleft 8s infinite;
+}
+.box:nth-child(4) {
+  animation: boxright 8s infinite;
+}
+.box:nth-child(5) {
+  animation: boxbottom 8s infinite;
+}
+.box:nth-child(6) {
+  animation: boxfront 8s infinite;
+}
+.box:nth-child(6) .face {
+  animation: none;
+}
 
-			<div class="box second">
-				<span class="icon-cont"><img style="align:center;margin-left: -118;margin-bottom: 00px;margin-top: -35;" src="/images/tab2.jpg"></span>
-				<span style="color: #fff;
-							 font-family: 'Open Sans', Arial, sans-serif;
-							 font-weight: 300;
-							 font-size: 24px;">
-					<h3 style="
-							   margin-top: 210px;
-							   ">Interactivity</h3></span><h4>
-				We have a dedicated space for dental care. We have dedicated team for dental services.</h4>					
-			</div>
+@keyframes boxtop {
+  from {
+    transform: rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(90deg) translateY(0);
+  }
+  20% {
+    transform: rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(0deg) translate3d(0, -0.5em, -0.5em) rotateX(90deg) translateY(0);
+  }
+  40%, 60% {
+    transform: rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(0deg) translate3d(0, -0.5em, -0.5em) rotateX(90deg) translateY(-1em);
+  }
+  80%, to {
+    transform: rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(0deg) translate3d(0, -0.5em, -0.5em) rotateX(90deg) translateY(0);
+  }
+}
+@keyframes boxleft {
+  from {
+    transform: rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateX(90deg) rotateY(-90deg) translateY(0);
+  }
+  20% {
+    transform: rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateY(0deg) translate3d(-0.5em, 0, -0.5em) rotateX(90deg) rotateY(-90deg) translateY(0);
+  }
+  40%, 60% {
+    transform: rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateY(0deg) translate3d(-0.5em, 0, -0.5em) rotateX(90deg) rotateY(-90deg) translateY(-1em);
+  }
+  80%, to {
+    transform: rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateY(0deg) translate3d(-0.5em, 0, -0.5em) rotateX(90deg) rotateY(-90deg) translateY(0);
+  }
+}
+@keyframes boxright {
+  from {
+    transform: rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateX(90deg) rotateY(90deg) translateY(0);
+  }
+  20% {
+    transform: rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateY(0deg) translate3d(0.5em, 0, -0.5em) rotateX(90deg) rotateY(90deg) translateY(0);
+  }
+  40%, 60% {
+    transform: rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateY(0deg) translate3d(0.5em, 0, -0.5em) rotateX(90deg) rotateY(90deg) translateY(-1em);
+  }
+  80%, to {
+    transform: rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateY(0deg) translate3d(0.5em, 0, -0.5em) rotateX(90deg) rotateY(90deg) translateY(0);
+  }
+}
+@keyframes boxbottom {
+  from {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(90deg) rotateY(180deg) translateY(0);
+  }
+  20% {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translate3d(0, 0.5em, -0.5em) rotateX(90deg) rotateY(180deg) translateY(0);
+  }
+  40%, 60% {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translate3d(0, 0.5em, -0.5em) rotateX(90deg) rotateY(180deg) translateY(-1em);
+  }
+  80%, to {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translate3d(0, 0.5em, -0.5em) rotateX(90deg) rotateY(180deg) translateY(0);
+  }
+}
+@keyframes boxfront {
+  from {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(-90deg) translateY(1em) rotateX(0deg) translateZ(0) rotateX(0deg) translateZ(-1em) rotateX(0deg) translate3d(0, 0.5em, 0.5em);
+  }
+  20% {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translateY(1em) rotateX(90deg) translateZ(0) rotateX(0deg) translateZ(-1em) rotateX(0deg) translate3d(0, 0.5em, 0.5em);
+  }
+  40%, 80% {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translateY(1em) rotateX(90deg) translateZ(1em) rotateX(0deg) translateZ(-1em) rotateX(0deg) translate3d(0, 0.5em, 0.5em);
+  }
+  86% {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translateY(1em) rotateX(90deg) translateZ(1em) rotateX(-90deg) translateZ(-1em) rotateX(0deg) translate3d(0, 0.5em, 0.5em);
+  }
+  to {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translateY(1em) rotateX(90deg) translateZ(1em) rotateX(-90deg) translateZ(-1em) rotateX(-180deg) translate3d(0, 0.5em, 0.5em);
+  }
+}
+@keyframes faceright {
+  from, 40% {
+    transform: rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateY(0deg) translateX(0.5em);
+  }
+  60%, to {
+    transform: rotateY(-90deg) translate3d(-0.5em, 0, -0.5em) rotateY(180deg) translateX(0.5em);
+  }
+}
+@keyframes faceleft {
+  from, 40% {
+    transform: rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateY(0deg) translateX(-0.5em);
+  }
+  60%, to {
+    transform: rotateY(90deg) translate3d(0.5em, 0, -0.5em) rotateY(-180deg) translateX(-0.5em);
+  }
+}
+@keyframes facetop {
+  from, 40% {
+    transform: rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(0deg) translateY(-0.5em);
+  }
+  60%, to {
+    transform: rotateX(-90deg) translate3d(0, 0.5em, -0.5em) rotateX(180deg) translateY(-0.5em);
+  }
+}
+@keyframes facebottom {
+  from, 40% {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(0deg) translateY(0.5em);
+  }
+  60%, to {
+    transform: rotateX(90deg) translate3d(0, -0.5em, -0.5em) rotateX(-180deg) translateY(0.5em);
+  }
+}
+@keyframes facefront {
+  from, 40% {
+    transform: translate3d(0, -0.5em, -0.5em) rotateX(0deg) translateZ(1em) rotateX(0deg) translateY(0.5em);
+  }
+  60%, to {
+    transform: translate3d(0, -0.5em, -0.5em) rotateX(180deg) translateZ(1em) rotateX(180deg) translateY(0.5em);
+  }
+}
 
-			<div class="box third">
-				<span class="icon-cont"><img style="align:center;margin-left: -118;margin-bottom: 00px;margin-top: -35;" src="/images/tab3.jpg"></span>
-				<span style="color: #fff;
-							 font-family: 'Open Sans', Arial, sans-serif;
-							 font-weight: 300;
-							 font-size: 24px;">
-					<h3 style="margin-top: 210px;
-							   ">Media</h3></span>
-				<h4>
-					We have a dedicated space for dental care. We have dedicated team for dental services.</h4>
-			</div>
-
-
-		</div>
-		<script>
-			$('.box').click(function() {
-				$(this).toggleClass('selected');
-
-			});
-		</script>
-		<script src =  "jquery-2.1.1.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>	
+		</style>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='rotateview'></div>
+<div class='container'>
+  <div class='box'>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+  </div>
+  <div class='box'>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+  </div>
+  <div class='box'>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+  </div>
+  <div class='box'>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+  </div>
+  <div class='box'>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+  </div>
+  <div class='box'>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+    <div class='face'></div>
+  </div>
+</div>
+		
+        <script src =  "jquery-2.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
